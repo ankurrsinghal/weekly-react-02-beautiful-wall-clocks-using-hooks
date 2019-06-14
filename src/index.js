@@ -40,6 +40,10 @@ const ClockGrids = styled.div`
   justify-content: space-around;
   padding: 4rem;
   background: #fafafa;
+
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
 `;
 
 const Heading = styled.div`
@@ -60,12 +64,33 @@ const Heading = styled.div`
     margin-top: 1rem;
     font-size: 1.5rem;
   }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 24px;
+      margin: 1rem 0;
+    }
+    
+    h3 {
+      font-size: 1rem;
+      margin: .5rem 0;
+    }
+
+    p {
+      font-size: 12px;
+      margin: .25rem 0;
+    }
+  }
 `;
 
 const IconLinks = styled.div`
   padding: 1rem 0 2rem;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
 `;
 
 const IconLink = styled.a`
@@ -75,6 +100,11 @@ const IconLink = styled.a`
   svg {
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 700px) {
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -88,7 +118,7 @@ function App() {
           Custom Hook:- <strong>useClock</strong>
         </p>
         <IconLinks>
-          <IconLink href="https://www.github.com/ankurrsinghal">
+          <IconLink href="https://github.com/ankurrsinghal/weekly-react-02-beautiful-wall-clocks-using-hooks">
             <GithubIcon />
           </IconLink>
         </IconLinks>
