@@ -18,7 +18,7 @@ const Mark = styled.div`
 `;
 
 const getRomanNumeral = index => {
-  const numerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+  const numerals = ['XII', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI'];
 
   return numerals[index];
 };
